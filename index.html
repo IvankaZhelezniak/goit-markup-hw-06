@@ -484,7 +484,7 @@
               autocomplete="off"
               placeholder="E-mail"
             />
-            <button type="submit" class="buttons">Подписаться</button>
+            <button type="submit" class="form-btn-footer">Подписаться</button>
           </div>
         </form>
       </div>
@@ -505,29 +505,28 @@
               name="name"
               id="name"
               autocomplete="off"
+              placeholder=" "
             />
             <svg class="form-field-icon">
-              <use href="./images/icon-svg/sprite.svg#icon-person"></use>
+              <use href="./images/icons-svg/sprite.svg#icon-person"></use>
             </svg>
           </div>
 
           <div class="form-field">
-            <svg class="form-field-icon">
-              <use href="./images/icon-svg/sprite.svg#icon-phone"></use>
-            </svg>
             <label for="telephone" class="form-label">Телефон</label>
             <input
               class="form-input"
               type="tel"
               name="telephone"
               id="telephone"
+              placeholder=" "
             />
+            <svg class="form-field-icon">
+              <use href="./images/icons-svg/sprite.svg#icon-phone"></use>
+            </svg>
           </div>
 
           <div class="form-field">
-            <svg class="form-field-icon">
-              <use href="./images/icon-svg/sprite.svg#icon-email"></use>
-            </svg>
             <label for="email" class="form-label">Почта</label>
             <input
               class="form-input"
@@ -535,12 +534,17 @@
               name="email"
               id="email"
               autocomplete="off"
+              placeholder=" "
             />
+            <svg class="form-field-icon">
+              <use href="./images/icons-svg/sprite.svg#icon-email"></use>
+            </svg>
           </div>
 
           <div class="form-comment">
             <label for="comment">Комментарий</label>
             <textarea
+              class="form-textarea"
               name="comment"
               id="comment"
               rows="8"
@@ -548,22 +552,23 @@
             ></textarea>
           </div>
 
-          <div class="checkbox">
-            <input type="checkbox" name="policy" id="policy" />
-            <label for="policy"
+          <label class="checkbox-form">
+            <input type="checkbox" name="policy" class="checkbox" />
+            <span class="check-box"></span>
+
+            <span class="text-check"
               >Соглашаюсь с рассылкой и принимаю
-              <a href="" class="link-form">Условия договора</a>
-            </label>
-          </div>
+              <a href="" class="link-form">Условия договора</a></span
+            >
+          </label>
 
           <div class="form-button">
-            <button type="submit" class="buttons">Отправить</button>
+            <button type="submit" class="buttons form-btn">Отправить</button>
           </div>
-
-          <svg data-modal-close class="icon">
-            <use href="./images/icons-svg/symbol-defs.svg#close"></use>
-          </svg>
         </form>
+        <svg data-modal-close class="icon">
+          <use href="./images/icons-svg/symbol-defs.svg#close"></use>
+        </svg>
       </div>
     </div>
     <script src="./js/modal.js"></script>
