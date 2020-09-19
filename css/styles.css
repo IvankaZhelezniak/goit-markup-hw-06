@@ -1127,10 +1127,10 @@ textarea {
 
 .form-input:not(:placeholder-shown),
 .form-input:focus {
-  border: 1px solid var(--accent-color);
+  border-color: var(--accent-color);
 }
 
-.form-textarea:focus {
+textarea:focus {
   border-color: var(--accent-color);
 }
 
