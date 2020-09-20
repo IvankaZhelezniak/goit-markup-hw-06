@@ -545,6 +545,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: #2f303a;
+  color: var(--secondary-bg-color);
   width: 358px;
 }
 
@@ -1004,6 +1005,8 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline-color: transparent;
+
+  color: var(--title-text-color);
 }
 
 .form-field label,
@@ -1042,9 +1045,15 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-input:not(:placeholder-shown),
+.form-input:not(:placeholder-shown) {
+  border-color: var(--accent-color);
+}
 .form-input:focus {
   outline-color: var(--accent-color);
+}
+
+textarea:not(:placeholder-shown) {
+  border-color: var(--accent-color);
 }
 
 textarea:focus {
